@@ -11,7 +11,7 @@ unzip /tmp/frontend.zip
 
 cd ../../../../
 
-cp /etc/nginx/nginx.conf
+cp nginx.conf /etc/nginx/nginx.conf
 
 systemctl enable nginx
 systemctl restart nginx
