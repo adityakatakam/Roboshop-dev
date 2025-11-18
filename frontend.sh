@@ -13,3 +13,5 @@ cd ../../../../
 
 cp /etc/nginx/nginx.conf
 
+systemctl enable nginx
+systemctl restart nginx
