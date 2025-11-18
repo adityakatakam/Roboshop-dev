@@ -3,7 +3,7 @@ dnf module enable redis:7 -y
 
 dnf install redis -y
 
-sed -i 's/127.0.0.0/0.0.0.0/g' /etc/redis/redis.conf
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/redis/redis.conf
 
 sed -i '/protected-mode-yes/c\protected-mode-no' /etc/redis/redis.conf
 
