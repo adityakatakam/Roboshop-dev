@@ -3,6 +3,8 @@ dnf module enable nodejs:20 -y
 
 dnf install nodejs -y
 
+cp catalogue.service /etc/systemd/system/catalogue.service
+
 useradd roboshop
 
 mkdir /app
@@ -14,9 +16,7 @@ unzip /tmp/catalogue.zip
 cd /app
 npm install
 
-exit
 
-cp catalogue.service /etc/systemd/system/catalogue.service
 
 systemctl daemon-reload
 
