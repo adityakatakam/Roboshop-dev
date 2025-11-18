@@ -14,7 +14,7 @@ unzip /tmp/catalogue.zip
 cd /app
 npm install
 
-cd ..
+exit
 
 cp catalogue.service /etc/systemd/system/catalogue.service
 
